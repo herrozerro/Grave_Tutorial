@@ -1,0 +1,1 @@
+return sc_AnimationHitFrame(image_number-1);
