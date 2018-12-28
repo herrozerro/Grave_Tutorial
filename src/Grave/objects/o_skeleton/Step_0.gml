@@ -65,7 +65,6 @@ switch state
 	case skeletonState.attackOne:
 		#region attackOneCode
 		sc_SetStateSprite(s_skeleton_attack_one, 0.6, 0);
-		
 		if(sc_AnimationHitFrame(0))
 		{
 			sc_CreateHitbox(x,y,self,s_skeleton_attack_one_damage,4,4,5,image_xscale);
