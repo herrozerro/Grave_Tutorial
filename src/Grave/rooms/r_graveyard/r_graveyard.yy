@@ -2,7 +2,7 @@
 {
     "name": "r_graveyard",
     "id": "2e644084-2491-49ed-90e8-3e72e920ed73",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,

@@ -8,7 +8,8 @@ enum skeletonState {
 	roll,
 	attackOne,
 	attackTwo,
-	attackThree
+	attackThree,
+	knockback
 }
 
 state = skeletonState.move;

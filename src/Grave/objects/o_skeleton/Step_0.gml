@@ -67,7 +67,7 @@ switch state
 		sc_SetStateSprite(s_skeleton_attack_one, 0.6, 0);
 		if(sc_AnimationHitFrame(0))
 		{
-			sc_CreateHitbox(x,y,self,s_skeleton_attack_one_damage,4,4,5,image_xscale);
+			sc_CreateHitbox(x,y,self,s_skeleton_attack_one_damage,2,4,5,image_xscale);
 		}
 		
 		if (input.attack && sc_AnimHitRange(2,4))
@@ -85,7 +85,7 @@ switch state
 		sc_SetStateSprite(s_skeleton_attack_two, 0.6, 0);
 		if(sc_AnimationHitFrame(1))
 		{
-			sc_CreateHitbox(x,y,self,s_skeleton_attack_two_damage,4,4,5,image_xscale);
+			sc_CreateHitbox(x,y,self,s_skeleton_attack_two_damage,2,4,5,image_xscale);
 		}
 		if (input.attack && sc_AnimHitRange(2,4))
 		{
@@ -102,12 +102,17 @@ switch state
 		sc_SetStateSprite(s_skeleton_attack_three, 0.6, 0);
 		if(sc_AnimationHitFrame(2))
 		{
-			sc_CreateHitbox(x,y,self,s_skeleton_attack_three_damage,4,4,8,image_xscale);
+			sc_CreateHitbox(x,y,self,s_skeleton_attack_three_damage,5,4,8,image_xscale);
 		}
 		if (sc_AnimationEnd())
 		{
 			state = skeletonState.move;
 		}
+		#endregion
+		break;
+	case skeletonState.knockback:
+		#region knockbackState
+		
 		#endregion
 		break;
 }

@@ -44,4 +44,15 @@ switch (state)
 		}
 		#endregion
 		break;
+	case knightState.knockback:
+		#region KnockbackState
+		sc_SetStateSprite(s_knight_hitstun,0,0);
+		sc_MoveAndCollide(knockback_speed,0);
+		knockback_speed = lerp(knockback_speed,0,0.1);
+		if(knockback_speed < 1){
+			knockback_speed = 0;
+			state = knightState.move;
+		}
+		#endregion
+		break;
 }
