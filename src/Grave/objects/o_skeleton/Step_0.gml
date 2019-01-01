@@ -64,6 +64,7 @@ switch state
 		break;
 	case skeletonState.attackOne:
 		#region attackOneCode
+		
 		sc_SetStateSprite(s_skeleton_attack_one, 0.6, 0);
 		if(sc_AnimationHitFrame(0))
 		{
@@ -78,10 +79,12 @@ switch state
 		{
 			state = skeletonState.move;
 		}
+		
 		#endregion
 		break;
 	case skeletonState.attackTwo:
 		#region attackTwoCode
+		
 		sc_SetStateSprite(s_skeleton_attack_two, 0.6, 0);
 		if(sc_AnimationHitFrame(1))
 		{
@@ -95,10 +98,12 @@ switch state
 		{
 			state = skeletonState.move;
 		}
+		
 		#endregion
 		break;
 	case skeletonState.attackThree:
 		#region attackThreeCode
+		
 		sc_SetStateSprite(s_skeleton_attack_three, 0.6, 0);
 		if(sc_AnimationHitFrame(2))
 		{
@@ -108,10 +113,13 @@ switch state
 		{
 			state = skeletonState.move;
 		}
+		
 		#endregion
 		break;
 	case skeletonState.knockback:
 		#region knockbackState
+		
+		sc_KnockbackState(s_skeleton_hitstun, skeletonState.move);
 		
 		#endregion
 		break;

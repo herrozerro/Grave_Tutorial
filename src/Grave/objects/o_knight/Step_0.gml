@@ -46,14 +46,9 @@ switch (state)
 		break;
 	case knightState.knockback:
 		#region KnockbackState
-		sc_SetStateSprite(s_knight_hitstun,0,0);
-		image_xscale = -sign(knockback_speed);
-		sc_MoveAndCollide(knockback_speed,0);
-		knockback_speed = sc_Approach(knockback_speed,0,knockbackFriction);
-		if(knockback_speed == 0){
-			knockback_speed = 0;
-			state = knightState.move;
-		}
+
+		sc_KnockbackState(s_knight_hitstun, knightState.move);
+		
 		#endregion
 		break;
 }

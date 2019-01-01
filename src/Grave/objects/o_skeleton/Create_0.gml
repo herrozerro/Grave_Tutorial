@@ -21,4 +21,6 @@ attackOneKnockback = 4;
 attackTwoKnockback = 4;
 attackThreeKnockback = 6;
 
+knockbackFriction = 0.3;
+
 input = instance_create_layer(0,0,"Instances",o_input);
