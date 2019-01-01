@@ -11,12 +11,10 @@ ds_list_add(hit_objects, other);
 
 if (other.object_index == o_knight)
 {
-	show_debug_message("Knight Knockback");
 	other.state = knightState.knockback;	
 }
 else if (other.object_index == o_skeleton)
 {
-	show_debug_message("Skeleton knockback");
 	other.state = skeletonState.knockback;	
 }
 
