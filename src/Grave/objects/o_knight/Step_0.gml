@@ -36,7 +36,7 @@ switch (state)
 		sc_SetStateSprite(s_knight_attack,0.6,0);
 		if(sc_AnimationHitFrame(4))
 		{
-			sc_CreateHitbox(x,y,self,s_skeleton_attack_one_damage,4,4,10,image_xscale);
+			sc_CreateHitbox(x,y,self,s_skeleton_attack_one_damage,attackKnockback,4,10,image_xscale);
 		}
 		if (sc_AnimationEnd())
 		{
@@ -47,9 +47,10 @@ switch (state)
 	case knightState.knockback:
 		#region KnockbackState
 		sc_SetStateSprite(s_knight_hitstun,0,0);
+		image_xscale = -sign(knockback_speed);
 		sc_MoveAndCollide(knockback_speed,0);
-		knockback_speed = lerp(knockback_speed,0,0.1);
-		if(knockback_speed < 1){
+		knockback_speed = sc_Approach(knockback_speed,0,knockbackFriction);
+		if(knockback_speed == 0){
 			knockback_speed = 0;
 			state = knightState.move;
 		}

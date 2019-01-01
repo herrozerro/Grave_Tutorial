@@ -17,5 +17,8 @@ state = skeletonState.move;
 runSpeed = 4;
 rollspeed = 6;
 
+attackOneKnockback = 4;
+attackTwoKnockback = 4;
+attackThreeKnockback = 6;
 
 input = instance_create_layer(0,0,"Instances",o_input);

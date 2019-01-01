@@ -12,3 +12,5 @@ enum knightState {
 attackDist = 42;
 walkSpeed = 1;
 state = knightState.move
+knockbackFriction = 0.75;
+attackKnockback = 2;
