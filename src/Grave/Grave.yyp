@@ -359,6 +359,14 @@
             }
         },
         {
+            "Key": "965168d1-4d94-4301-96d7-04c8028dd2d4",
+            "Value": {
+                "id": "d66562b4-a283-424a-82e8-41af7e667749",
+                "resourcePath": "objects\\o_HUD\\o_HUD.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a1294a70-c3d2-4ae5-8e90-80a4260c1a25",
             "Value": {
                 "id": "653ff2c6-0466-4678-b6ed-610b2e434c90",
