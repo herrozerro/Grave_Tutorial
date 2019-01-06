@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "0085f8ec-d32e-4cad-ba84-f62a2c4a343a",
+            "Value": {
+                "id": "71a763f9-700e-42a1-a067-97989761b624",
+                "resourcePath": "objects\\o_paralax\\o_paralax.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "028f4736-0cd2-4ca2-8bf8-49f1f218773a",
             "Value": {
                 "id": "bbeb6d13-762b-4218-8672-6de773fc893a",
