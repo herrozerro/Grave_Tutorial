@@ -17,6 +17,9 @@ state = skeletonState.move;
 runSpeed = 4;
 rollspeed = 6;
 
+kills = 0;
+level = 1;
+
 attackOneKnockback = 4;
 attackTwoKnockback = 4;
 attackThreeKnockback = 6;

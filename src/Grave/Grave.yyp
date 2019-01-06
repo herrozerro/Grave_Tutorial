@@ -463,6 +463,14 @@
             }
         },
         {
+            "Key": "d446d06c-261c-4f17-ab69-1b75b5cbfee5",
+            "Value": {
+                "id": "9d1bd085-534b-4b49-8769-8f9352f56afd",
+                "resourcePath": "fonts\\f_one\\f_one.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "d9d304d9-3593-482d-bd65-e230cb9b595c",
             "Value": {
                 "id": "0417e0f6-734b-4c33-a2c1-d0f9cbbf6eeb",
