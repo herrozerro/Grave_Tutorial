@@ -19,6 +19,9 @@ rollspeed = 6;
 
 kills = 0;
 level = 1;
+experience = 0;
+maxExperience = 10;
+strength = 25;
 
 attackOneKnockback = 4;
 attackTwoKnockback = 4;

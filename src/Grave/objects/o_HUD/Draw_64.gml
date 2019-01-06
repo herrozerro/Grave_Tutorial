@@ -7,6 +7,7 @@ var hp_height = 6;
 if (instance_exists(o_skeleton)) {
 //For making it animate the bar
 	draw_hp = lerp(draw_hp,o_skeleton.hp,0.2);
+	draw_max_hp = o_skeleton.maxHp;
 } else {
 	draw_hp = lerp(draw_hp,0,0.2);
 }
